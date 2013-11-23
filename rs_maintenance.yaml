@@ -3,5 +3,5 @@ author: Anti0815
 version: 0.9.3
 desc: Allows to set the current installation into maintenance mode.
 info_url: https://github.com/Anti0815/rs_maintenance
-config_url: /plugins/rs_maintenance/pages/admin.php
+config_url: /plugins/rs_maintenance/pages/setup.php
 
