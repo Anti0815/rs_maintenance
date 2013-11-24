@@ -19,8 +19,11 @@ function HookRs_maintenanceAllModifyomitsearchbarpages(){
 }
 
 function showMaintenance(){
-	global $rs_maintenance_maintenance_enabled, $usergroup;
-	return $rs_maintenance_maintenance_enabled && $usergroup != 3;
+	global $rs_maintenance_maintenance_enabled, $rs_maintenance_allowed_users,
+		$usergroup, $userref;
+	
+	return $rs_maintenance_maintenance_enabled && $usergroup != 3
+		&& !in_array($userref, $rs_maintenance_allowed_users);
 }
 
 function onMaintenancePage(){

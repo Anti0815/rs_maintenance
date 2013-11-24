@@ -14,12 +14,10 @@ $plugin_name = $lang['rs_maintenance_name'];                       // Usually a 
 $page_heading = $lang['rs_maintenance_admin_heading']; // Usually a $lang[] string
 $page_intro = '<p>' . $lang['rs_maintenance_description'] . '</p>';                 // Usually either a $lang[] string or ''
 
-// Build the $page_def array of descriptions of each configuration variable the plugin uses.
-// Each element of $page_def describes one configuration variable. Each description is 
-// created by one of the config_add_xxxx helper functions. See their definitions and
-// descriptions in include/plugin_functions for more information.
-
 $page_def[] = config_add_boolean_select('rs_maintenance_maintenance_enabled', $lang['rs_maintenance_maintenance_enabled']);
+$page_def[] = config_add_boolean_select('rs_maintenance_omit_search_bar', $lang['rs_maintenance_omit_search_bar']);
+$page_def[] = config_add_text_input('rs_maintenance_maintenance_msg', $lang['rs_maintenance_msg']);
+$page_def[] = config_add_multi_user_select('rs_maintenance_allowed_users', $lang['rs_maintenance_allowed_users']);
 
 // Do the page generation ritual -- don't change this section.
 $upload_status = config_gen_setup_post($page_def, $plugin_name);

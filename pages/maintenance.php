@@ -7,7 +7,7 @@ require_once(__DIR__ . '/../../../include/header.php');
 //$pagename = 'maintenance.php';
 ?>
 
-<center>Installation is in maintenance mode!</center>
+<center><?php echo $rs_maintenance_maintenance_msg; ?></center>
 <?php
 
 /*
