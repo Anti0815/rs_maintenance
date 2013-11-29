@@ -18,6 +18,13 @@ function HookRs_maintenanceAllModifyomitsearchbarpages(){
 	return false;
 }
 
+function HookRs_maintenanceAllHeadertop(){
+	global $lang;
+	echo '<center><div>' . $lang['rs_maintenance_header_string'] . '</div></center>';
+}
+
+// END HOOKS
+
 function showMaintenance(){
 	global $rs_maintenance_maintenance_enabled, $rs_maintenance_allowed_users,
 		$usergroup, $userref;

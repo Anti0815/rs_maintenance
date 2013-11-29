@@ -7,3 +7,5 @@ $lang['rs_maintenance_description'] = 'If maintenance mode is enabled, only supe
 $lang['rs_maintenance_omit_search_bar'] = 'Disable simple search on maintenance site?';
 $lang['rs_maintenance_msg'] = 'Maintenance message';
 $lang['rs_maintenance_allowed_users'] = 'Users allowed to use RS in maintenance mode';
+
+$lang['rs_maintenance_header_string'] = '[Maintenance mode]';
