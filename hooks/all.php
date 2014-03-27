@@ -19,8 +19,10 @@ function HookRs_maintenanceAllModifyomitsearchbarpages(){
 }
 
 function HookRs_maintenanceAllHeadertop(){
-	global $lang;
-	echo '<center><div>' . $lang['rs_maintenance_header_string'] . '</div></center>';
+	global $lang, $rs_maintenance_maintenance_enabled;
+	if($rs_maintenance_maintenance_enabled){
+		echo '<center><div>' . $lang['rs_maintenance_header_string'] . '</div></center>';
+	}
 }
 
 // END HOOKS
